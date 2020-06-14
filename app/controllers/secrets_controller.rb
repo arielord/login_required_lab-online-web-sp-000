@@ -7,6 +7,6 @@ class SecretsController < ApplicationController
   private
   
   def require_login
-    return head(:forbidden)
+    return head(:forbidden) unless
   end
 end
