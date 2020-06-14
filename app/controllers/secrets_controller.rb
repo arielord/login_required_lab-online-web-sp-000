@@ -1,5 +1,5 @@
 class SecretsController < ApplicationController
-  before_action 
+  before_action :require
   def show
   end
 end
