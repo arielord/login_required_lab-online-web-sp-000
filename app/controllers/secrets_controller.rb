@@ -8,6 +8,6 @@ class SecretsController < ApplicationController
   
   def require_login
     if !curren_user
-      redirect_to controller 'session'
+      redirect_to controller 'sessions', a
   end
 end
