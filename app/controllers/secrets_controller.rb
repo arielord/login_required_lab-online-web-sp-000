@@ -7,7 +7,7 @@ class SecretsController < ApplicationController
   private
   
   def require_login
-    if !curren_user
+    if !current_user
       redirect_to controller: 'sessions', action: 'new'
     end
   end
