@@ -4,6 +4,6 @@
   protect_from_forgery with: :exception
   
   def current_user
-    return session[:name] unless session[:name]
+    return session[:name] unless !session[:name]
   end
 end
